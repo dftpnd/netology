@@ -143,16 +143,16 @@ $(document).ready(function () {
             });
 
             if (status.length === 0) {
-                $('#submit').removeAttr('disabled')
+                $('#submit').removeAttr('disabled');
             } else {
-                $('#submit').attr('disabled', 'disabled')
+                $('#submit').attr('disabled', 'disabled');
             }
         })
     });
 
     $(".excursion").submit(function (event) {
         var data = $(this).serialize();
-
+        $('#submit').attr('disabled', 'disabled');
 
         $.ajax({
             method: "GET",
@@ -161,6 +161,9 @@ $(document).ready(function () {
         })
             .done(function (msg) {
                 alert("Data Saved: https://docs.google.com/spreadsheets/d/1_lAgUw2DfwNNaeFvhZVco_WhGUsTumdn7lknca1NQWo/edit?usp=sharing")
+            })
+            .always(function() {
+                $('#submit').removeAttr('disabled')
             });
         event.preventDefault();
     });
