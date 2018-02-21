@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>netology</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+<form class="excursion" method="get" action="https://script.google.com/macros/s/AKfycbyhc4wUUjtsdKgH46XvQPHc0joZNL2pj2leiirO39rwd1uxLt2k/exec">
+    <aside class="hint excursion__side">
+        <h3 class="hint__title">Почему стабильно солнечное затмение?</h3>
+        <p class="hint__text">
+            Эффективный диаметр жизненно вызывает случайный эффективный радиус, а время ожидания ответа составило бы
+            80 миллиардов лет.
+        </p>
+    </aside>
+    <fieldset class="app">
+        <legend class="app__title">Заявка на экскурсионный полёт на Марс</legend>
+        <div class="app__view">
+            <fieldset class="app__group">
+                <div class="bon">
+                    <div class="bon__label">
+                        <label class="label" for="surname">Фамилия</label>
+                    </div>
+                    <div class="bon__field">
+                        <input data-transliterate="#surnameLatin" minlength="2" id="surname" name="surname" class="field-text" type="text" value="" required/> <br>
+                        <label class="bon__hint">
+                            <input type="checkbox" name="surnameChanged"/>
+                            ранее менялась
+                        </label>
+                    </div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="name">Имя</label></div>
+                    <div class="bon__field"><input data-transliterate="#nameLatin" minlength="2" id="name" class="field-text" name="name" type="text" required/></div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="middleName">Отчество</label></div>
+                    <div class="bon__field">
+                        <input id="middleName" class="field-text" name="middleName" type="text" />
+                        <div class="bon__warning">
+                            Если вы не хотите лететь в багажном отсеке, пожалуйста, укажите
+                            ваше отчество.
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="app__group">
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="surnameLatin">Фамилия латиницей</label></div>
+                    <div class="bon__field"><input class="field-text" id="surnameLatin" name="surnameLatin" type="text"
+                                                   required/></div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="nameLatin">Имя латиницей</label></div>
+                    <div class="bon__field"><input class="field-text" id="nameLatin" name="nameLatin" type="text"
+                                                   required/></div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label for="birthDay">Дата рождения</label></div>
+                    <div class="bon__field">
+                        <fieldset class="birth-group show-helper">
+                            <select name="birthDay" id="birthDay" required>
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4" >4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="birthMonth" required>
+                                <option value=""></option>
+                                <option value="01">январь</option>
+                                <option value="02">февраль</option>
+                                <option value="03">март</option>
+                                <option value="04">апрель</option>
+                                <option value="05">март</option>
+                                <option value="06">май</option>
+                                <option value="07">июнь</option>
+                                <option value="08">июль</option>
+                                <option value="09">август</option>
+                                <option value="10">сентябрь</option>
+                                <option value="11">ноябрь</option>
+                                <option value="12">декабрь</option>
+                            </select>
+                            <select name="birthYear" required>
+                                <option value=""></option>
+                                <option value="1920" >1920</option>
+                                <option value="1991" >1991</option>
+                            </select>
+                        </fieldset>
+                        <div class="helper">
+                            <div class="helper__text ">Какой-то текст про то, почему нельзя летать тем, кому за 90.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label">Пол</label></div>
+                    <fieldset class="bon__field">
+                        <div class="buttons bon__buttons">
+                            <input type="radio" id="genderMale" checked name="gender" value="male"
+                                   class="buttons__type field-text">
+                            <label for="genderMale" class="buttons__default buttons__default--first"><span>мужской</span></label>
+                            <input type="radio" id="genderFeminine" name="gender" value="feminine"
+                                   class="buttons__type field-text">
+                            <label for="genderFeminine"
+                                   class="buttons__default buttons__default--second"><span>женский</span></label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="status">Семейное положение</label></div>
+                    <div class="bon__field">
+                        <select id="status" name="status" required>
+                            <option value=""></option>
+                            <option value="женат">женат</option>
+                            <option value="в гражданском браке">в гражданском браке</option>
+                            <option value="разведен">разведен</option>
+                            <option value="холост">холост</option>
+                            <option value="вдовец">вдовец</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="edu">Образование</label></div>
+                    <div class="bon__field">
+                        <select id="edu" name="edu" required>
+                            <option value=""></option>
+                            <option value="высшее">высшее</option>
+                            <option value="средне специальноее">средне специальноее</option>
+                            <option value="среднее">среднее</option>
+                            <option value="студент">студент</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="app__group">
+                <div class="bon">
+                    <div class="bon__label"></div>
+                    <div class="bon__field">
+                        <legend class="app__fieldset-title">Контактная информация</legend>
+                    </div>
+                </div>
+
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="phone">Моб. телефон</label></div>
+                    <div class="bon__field">
+                        <input class="field-text js-phone-mask"
+                               id="phone"
+                               name="phone"
+                               type="text"
+                               placeholder="+7 "
+                               data-inputmask="'mask': '+7 (999) 999-99-99'"
+                               required
+                               value=""/>
+                    </div>
+                </div>
+                <div class="bon">
+                    <div class="bon__label"><label class="label" for="email">Электронная почта</label></div>
+                    <div class="bon__field"><input class="field-text" id="email" type="email" name="email" value="" required/>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <footer class="app__footer app__group">
+            <div class="bon">
+                <div class="bon__label"></div>
+                <div class="bon__field">
+                    <label class="box">
+                        <div><input type="checkbox" required></div>
+                        <div class="box__text">Ставя эту галочку, я подтверждаю, что поставил её в трезвом уме и твердой
+                            памяти.
+                        </div>
+                    </label>
+                    <input id="submit" class="button" type="submit" role="button" disabled value="Полететь на Марс"/>
+                </div>
+            </div>
+        </footer>
+    </fieldset>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+<script async src="js/form.js"></script>
+</body>
+</html>
